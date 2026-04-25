@@ -161,3 +161,137 @@ color :black
     max-width: 600px;
     margin: 20px auto;
 }
+
+
+
+.login {
+    min-height: calc(100vh - 80px);
+    padding: 110px 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.45) url('./imagem/ImagemdeFundo.jpg') center/cover no-repeat;
+}
+
+.login .container {
+    width: 100%;
+    max-width: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+.login .card {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 24px;
+    padding: 36px 28px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+    color: #111;
+}
+
+.login .card h2 {
+    margin: 0 0 22px;
+    font-size: 28px;
+    color: #ED145B;
+    text-align: center;
+}
+
+.login .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.login .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login .campo span {
+    color: #222;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.login .campo input,
+.login .campo select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #c4c4c4;
+    border-radius: 14px;
+    background: #fff;
+    font-size: 15px;
+    color: #111;
+}
+
+.login .campo input:focus,
+.login .campo select:focus {
+    outline: none;
+    border-color: #ED145B;
+    box-shadow: 0 0 0 4px rgba(237, 20, 91, 0.12);
+}
+
+.login .botao {
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    border-radius: 14px;
+    background: #ED145B;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.login .botao:hover {
+    transform: translateY(-1px);
+    background: #c1144a;
+}
+
+.login p {
+    font-size: 13px;
+    color: #444;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.login p a {
+    color: #ED145B;
+    font-weight: 700;
+}
+
+.card_erro {
+    display: none;
+    background: #fff4f4;
+    color: #9d1f2d;
+    border-radius: 16px;
+    border: 1px solid #f2c2c2;
+    padding: 14px 16px;
+    max-width: 100%;
+    margin-bottom: 18px;
+}
+
+.card_erro #mensagem_erro {
+    font-size: 14px;
+}
+
+@media (max-width: 720px) {
+    .login {
+        padding: 100px 16px 30px;
+    }
+
+    .login .card {
+        padding: 28px 22px;
+    }
+
+    .header {
+        width: 92%;
+    }
+
+    header ul {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+}
